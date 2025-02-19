@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "iransans";
+    src: url("/fonts/IRANSansWebFaNum-Medium.woff2") format("woff2"),
+      url("/fonts/IRANSansWebFaNum-Medium.woff") format("woff"),
+      url("/fonts/IRANSansWebFaNum-Medium.ttf") format("ttf"),
+      url("/fonts/IRANSansWebFaNum-Medium.eot") format("eot");
+  }
+  @font-face {
+    font-family: "iransanslight";
+    src: url("/fonts/IRANSansWeb-Light.woff2") format("woff2"),
+      url("/fonts/IRANSansWeb-Light.woff") format("woff"),
+      url("/fonts/IRANSansWeb-Light.ttf") format("ttf"),
+      url("/fonts/IRANSansWeb-Light.eot") format("eot");
+  }
+}
+@layer components {
+  .header-md {
+    @apply md:flex md:flex-row md:justify-evenly md:items-center md:text-[16px] md:font-iransanslight   md:space-y-0 !important;
+  }
+}
+@layer components {
+  .header-lg {
+    @apply lg:flex lg:flex-row lg:justify-center lg:items-center lg:text-[16px] lg:font-iransanslight  lg:gap-0 lg:p-0 lg:w-full  !important;
+  }
+}
