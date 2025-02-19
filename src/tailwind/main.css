@@ -1,27 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
+  @font-face {
+    font-family: "iransans";
+    src: url("../../public/fonts/IRANSansWebFaNum-Medium.woff2") format("woff2"),
+      url("../../public/fonts/IRANSansWebFaNum-Medium.woff") format("woff"),
+      url("../../public/fonts/IRANSansWebFaNum-Medium.ttf") format("ttf"),
+      url("../../public/fonts/IRANSansWebFaNum-Medium.eot") format("eot");
+  }
+  @font-face {
+    font-family: "iransanslight";
+    src: url("../../public/fonts/IRANSansWeb-Light.woff2") format("woff2"),
+      url("../../public/fonts/IRANSansWeb-Light.woff") format("woff"),
+      url("../../public/fonts/IRANSansWeb-Light.ttf") format("ttf"),
+      url("../../public/fonts/IRANSansWeb-Light.eot") format("eot");
+  }
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  @font-face {
-    font-family: "iransans";
-    src: url("/fonts/IRANSansWebFaNum-Medium.woff2") format("woff2"),
-      url("/fonts/IRANSansWebFaNum-Medium.woff") format("woff"),
-      url("/fonts/IRANSansWebFaNum-Medium.ttf") format("ttf"),
-      url("/fonts/IRANSansWebFaNum-Medium.eot") format("eot");
-  }
-  @font-face {
-    font-family: "iransanslight";
-    src: url("/fonts/IRANSansWeb-Light.woff2") format("woff2"),
-      url("/fonts/IRANSansWeb-Light.woff") format("woff"),
-      url("/fonts/IRANSansWeb-Light.ttf") format("ttf"),
-      url("/fonts/IRANSansWeb-Light.eot") format("eot");
-  }
-}
+  
 @layer components {
   .header-md {
     @apply md:flex md:flex-row md:justify-evenly md:items-center md:text-[16px] md:font-iransanslight   md:space-y-0 !important;

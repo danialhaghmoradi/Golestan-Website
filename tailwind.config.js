@@ -10,8 +10,8 @@ export default {
         'paralax': "url('/images/section 9/image-1.png')",
       },
       fontFamily: {
-        iransans: ['"iransans"'],
-        iransanslight:['"iransanslight"']
+        iransans: ['iransans', 'sans-serif'],
+        iransanslight: ['iransanslight', 'sans-serif']
       },
     },
   },
